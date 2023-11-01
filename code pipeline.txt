@@ -1,0 +1,14 @@
+https://medium.com/@JohnxLe/creating-a-static-website-using-codepipeline-codecommit-and-cloudfront-447ac613711b
+
+s3 bucket get object config 
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::<Bucket_name>/*"
+        }
+    ]
+}
